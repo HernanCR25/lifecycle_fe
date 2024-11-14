@@ -105,10 +105,10 @@
             class="text-danger"
           >
             <div *ngIf="personForm.controls['times']?.hasError('required')">
-              El teléfono es requerido.
+              El tiempo es requerido.
             </div>
             <div *ngIf="personForm.controls['times']?.hasError('pattern')">
-              El teléfono debe contener solo números.
+              El tiempo debe contener solo números.
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@
           class="btn btn-primary"
           [disabled]="!personForm.valid"
         >
-          Crear Persona
+          Crear 
         </button>
       </form>
     </div>
