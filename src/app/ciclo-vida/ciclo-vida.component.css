@@ -1,0 +1,47 @@
+#layoutSidenav {
+  display: flex;
+}
+
+#layoutSidenav_content {
+  margin-left: 250px; /* Ajusta según el ancho de tu sidebar */
+  padding: 20px;
+  width: calc(100% - 250px); /* Ajusta según el ancho de tu sidebar */
+}
+
+.sidebar {
+  width: 250px;
+  background-color: var(--primary-color);
+  color: white;
+  height: 100vh;
+  padding-top: 1rem;
+  position: fixed;
+  transition: width 0.3s;
+}
+
+.table {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.nav_link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav_link:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+}
+
+.navlink_icon {
+  margin-right: 1rem;
+}

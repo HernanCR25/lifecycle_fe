@@ -1,0 +1,69 @@
+<nav aria-label="navbar" class="navbar">
+  <div class="logo_item">
+    <i class="bx bx-menu menu-icon" (click)="toggleSidebar()"></i>
+    <img src="assets/nphlogoo.png" alt="bodega" class="logo-img" />
+    NPH
+  </div>
+  <div class="navbar_content">
+    <div class="profile-container" (click)="toggleProfileMenu()">
+      <img src="assets/ad.png" alt="Profile" class="profile-img" />
+    </div>
+  </div>
+</nav>
+
+<main [ngClass]="{ 'dark-mode': isDarkMode }">
+  <nav aria-label="nav" class="sidebar" [ngClass]="{ close: isSidebarClosed }">
+    <div class="menu_content">
+      <ul class="menu_items">
+        <li class="item">
+          <a routerLink="/cycles" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bxs-user-pin"></i>
+            </span>
+            <span class="navlink">CICLO DE VIDA</span>
+          </a>
+        </li>
+        <li class="item">
+          <a routerLink="/ciclo-vida-inactive" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bxs-user-pin"></i>
+            </span>
+            <span class="navlink">CICLO DE VIDA(I)</span>
+          </a>
+        </li>
+        <li class="item">
+          <a routerLink="/product" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-box"></i>
+            </span>
+            <span class="navlink">PROVEEDORES</span>
+          </a>
+        </li>
+        <li class="item">
+          <a routerLink="/category" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-category"></i>
+            </span>
+            <span class="navlink">PRODUCTOS</span>
+          </a>
+        </li>
+        <li class="item">
+          <a routerLink="/sale" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-dollar-circle"></i>
+            </span>
+            <span class="navlink">ALIMENTACIÓN</span>
+          </a>
+        </li>
+        <li class="item">
+          <a routerLink="/sale-detail" class="nav_link">
+            <span class="navlink_icon">
+              <i class="bx bx-detail"></i>
+            </span>
+            <span class="navlink">VACUNAS</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</main>
